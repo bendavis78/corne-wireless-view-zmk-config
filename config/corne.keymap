@@ -57,10 +57,10 @@
 
             label = "Raise";
             bindings = <
-&kp TILDE   &kp EXCL  &kp AT  &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp BSPC
-&kp GRAVE   &trans    &trans  &trans     &trans    &trans       &trans     &kp ASTERISK  &kp LBKT              &kp RBKT               &kp BSLH   &kp PLUS
-&kp LSHIFT  &trans    &trans  &trans     &trans    &trans       &trans     &trans        &kp LBRC              &kp RBRC               &trans     &kp LCTRL
-                              &kp LCTRL  &kp LGUI  &trans       &kp SPACE  &kp RET       &trans
+&kp TILDE   &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER  &kp BSPC
+&kp GRAVE   &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp PLUS   &kp LBKT              &kp RBKT               &kp PIPE   &kp EQUAL
+&kp LSHIFT  &trans    &trans  &trans    &trans    &trans       &kp FSLH   &kp ASTRK  &kp LBRC              &kp RBRC               &kp BSLH   &kp LCTRL
+                              &trans    &trans    &kp SPACE    &kp ENTER  &trans     &trans
             >;
         };
     };
