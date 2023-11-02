@@ -11,6 +11,11 @@
 / {
     combos {
         compatible = "zmk,combos";
+
+        to_layer_3 {
+            bindings = <&to 3>;
+            key-positions = <36 37>;
+        };
     };
 
     keymap {
@@ -41,10 +46,10 @@
 
             label = "Lower";
             bindings = <
-&kp LC(TAB)  &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT    &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &kp LCTRL
-                                         &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+&kp LC(TAB)  &kp N1  &kp N2  &kp N3    &kp N4  &kp N5       &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
+&trans       &trans  &trans  &trans    &trans  &trans       &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
+&kp LSHFT    &trans  &trans  &trans    &trans  &trans       &trans    &trans    &trans    &trans     &trans  &kp LCTRL
+                             &kp LGUI  &trans  &kp SPACE    &kp RET   &trans    &kp RALT
             >;
         };
 
@@ -61,6 +66,15 @@
 &kp GRAVE   &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp PLUS   &kp LBKT              &kp RBKT               &kp PIPE   &kp EQUAL
 &kp LSHIFT  &trans    &trans  &trans    &trans    &trans       &kp FSLH   &kp ASTRK  &kp LBRC              &kp RBRC               &kp BSLH   &kp LCTRL
                               &trans    &trans    &kp SPACE    &kp ENTER  &trans     &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&bt BT_CLR  &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                        &trans        &trans        &trans          &trans  &trans  &trans
             >;
         };
     };
