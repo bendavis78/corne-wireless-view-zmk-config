@@ -11,6 +11,11 @@
 / {
     combos {
         compatible = "zmk,combos";
+
+        layer1-gui-combo {
+            bindings = <&kp LGUI>;
+            key-positions = <36 24>;
+        };
     };
 
     behaviors {
