@@ -11,6 +11,11 @@
 / {
     combos {
         compatible = "zmk,combos";
+
+        ctrl_spc_as_gui {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <24 38>;
+        };
     };
 
     behaviors {
