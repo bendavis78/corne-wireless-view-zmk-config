@@ -72,10 +72,10 @@
 
         TRI {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_N9        &kp KP_SUBTRACT  &kp KP_DIVIDE
-&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_N0     &kp KP_NUMBER_4  &kp KP_N5        &kp KP_NUMBER_6  &kp KP_PLUS      &kp KP_MULTIPLY
-&trans  &trans  &trans  &trans  &trans  &trans    &trans        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_N3        &kp KP_DOT       &trans
-                        &trans  &trans  &trans    &kp KP_ENTER  &trans           &kp KP_N0
+&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_DIVIDE    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_N9        &kp KP_SUBTRACT  &kp BACKSPACE
+&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_MULTIPLY  &kp KP_NUMBER_4  &kp KP_N5        &kp KP_NUMBER_6  &kp KP_PLUS      &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_N3        &kp KP_DOT       &trans
+                        &trans  &trans  &trans    &kp KP_ENTER     &trans           &kp KP_N0
             >;
 
             label = "Tri-layer";
