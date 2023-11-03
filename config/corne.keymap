@@ -15,6 +15,7 @@
         layer1-gui-combo {
             bindings = <&kp LGUI>;
             key-positions = <24 37>;
+            layers = <0 1>;
         };
     };
 
