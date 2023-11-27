@@ -17,6 +17,11 @@
             key-positions = <24 37>;
             layers = <0 1>;
         };
+
+        tog-bt {
+            bindings = <&tog 4>;
+            key-positions = <37 40 0>;
+        };
     };
 
     behaviors {
