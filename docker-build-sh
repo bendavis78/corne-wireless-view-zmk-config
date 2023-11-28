@@ -1,0 +1,24 @@
+#!/bin/bash
+set -e
+
+zephyr_version=3.2.0
+length=$(yq e '.include | length' build.yaml)
+artifacts=()
+
+for ((i=0; i<length; i++)); do
+    board=$(yq e ".include[$i].board" build.yaml)
+    shield=$(yq e ".include[$i].shield" build.yaml)
+    extra_cmake_args="-DSHIELD=\"$shield\""
+    display_name="$shield - $board"
+    artifact_name="$shield-$board-zmk"
+    #echo "west build -s zmk/app -b $board -- -DZMK_CONFIG=/workspace/config -DSHIELD=\"${shield}\""
+    west build -s zmk/app -b "$board" -- -DZMK_CONFIG=/workspace/config -DSHIELD="${shield}"
+    mkdir -p build/artifacts
+    cp build/zephyr/zmk.uf2 build/artifacts/"${artifact_name}".uf2
+    artifacts+=(build/artifacts/"${artifact_name}".uf2) 
+done
+
+echo "Created artifacts:"
+for artifact in "${artifacts[@]}"; do 
+  echo "- $artifact"
+done
