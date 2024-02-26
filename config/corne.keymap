@@ -12,12 +12,6 @@
     combos {
         compatible = "zmk,combos";
 
-        layer1-gui-combo {
-            bindings = <&kp LGUI>;
-            key-positions = <24 37>;
-            layers = <0 1>;
-        };
-
         tog-bt {
             bindings = <&tog 4>;
             key-positions = <37 40 0>;
@@ -107,7 +101,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
