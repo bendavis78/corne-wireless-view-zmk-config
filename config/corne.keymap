@@ -16,6 +16,11 @@
             bindings = <&tog 4>;
             key-positions = <37 40 0>;
         };
+
+        LGUI_KEY {
+            bindings = <&kp LS(LEFT_GUI)>;
+            key-positions = <37 24>;
+        };
     };
 
     behaviors {
