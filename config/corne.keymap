@@ -69,10 +69,10 @@
 
         TRI {
             bindings = <
-&trans  &kp LC(LA(F1))  &kp LC(LA(F2))  &kp LC(LA(F3))  &kp LC(LA(F4))  &kp LA(LC(F5))    &kp LC(LA(F6))  &kp LA(LC(F7))  &kp LC(LA(F8))  &kp LC(LA(F9))  &kp LA(LC(F10))  &trans
-&mo 5   &trans          &trans          &trans          &trans          &trans            &trans          &trans          &trans          &trans          &trans           &trans
-&trans  &trans          &trans          &trans          &trans          &trans            &trans          &trans          &trans          &trans          &trans           &trans
-                                        &trans          &trans          &trans            &trans          &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&mo 5   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
 
             label = "Tri-Layer";
