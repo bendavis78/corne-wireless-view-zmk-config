@@ -63,11 +63,11 @@
 &kp TILDE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp BSPC
 &kp GRAVE  &kp F1    &kp F2  &kp F3    &kp F4    &kp F5       &kp MINUS  &kp PLUS   &kp LBKT              &kp RBKT               &kp PIPE   &kp EQUAL
 &kp LCTRL  &kp F6    &kp F7  &kp F8    &kp F9    &kp F10      &kp FSLH   &kp ASTRK  &kp LBRC              &kp RBRC               &kp BSLH   &dscw
-                             &trans    &mo 0     &kp SPACE    &kp ENTER  &mo 2      &trans
+                             &trans    &mo 3     &kp SPACE    &kp ENTER  &mo 2      &trans
             >;
         };
 
-        NP {
+        TRI {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &kp KP_DIVIDE    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_N9        &kp KP_SUBTRACT  &kp BACKSPACE
 &mo 4   &trans  &trans  &trans  &trans  &trans    &kp KP_MULTIPLY  &kp KP_NUMBER_4  &kp KP_N5        &kp KP_NUMBER_6  &kp KP_PLUS      &kp DEL
@@ -75,7 +75,7 @@
                         &trans  &trans  &trans    &kp KP_ENTER     &trans           &kp KP_N0
             >;
 
-            label = "NumPad";
+            label = "Tri-Layer";
         };
 
         BT {
