@@ -16,7 +16,6 @@
             bindings = <&kp LEFT_META>;
             key-positions = <24 37>;
             slow-release;
-            layers = <0 2 3>;
         };
     };
 
