@@ -28,15 +28,6 @@
         };
     };
 
-    macros {
-        new_macro: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <>;
-            label = "NEW_MACRO";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
