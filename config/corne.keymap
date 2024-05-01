@@ -12,9 +12,11 @@
     combos {
         compatible = "zmk,combos";
 
-        meta-key {
+        meta-combo {
             bindings = <&kp LEFT_META>;
             key-positions = <24 37>;
+            slow-release;
+            layers = <0 2 3>;
         };
     };
 
@@ -25,12 +27,14 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&caps_word>;
         };
+    };
 
-        td_mo2_tl3: td_mo2_tl3 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_MO2_TL3";
+    macros {
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mo 2>, <&tog 0>;
+            bindings = <>;
+            label = "NEW_MACRO";
         };
     };
 
