@@ -16,6 +16,7 @@
             bindings = <&kp LEFT_META>;
             key-positions = <24 37>;
             slow-release;
+            timeout-ms = <9999>;
         };
     };
 
