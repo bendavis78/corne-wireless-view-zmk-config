@@ -17,16 +17,6 @@
             key-positions = <24 37>;
             timeout-ms = <9999>;
         };
-
-        meta-pgup-vshell-fix {
-            bindings = <&kp PG_UP>;
-            key-positions = <24 37 32>;
-        };
-
-        meta-pgdn-vshell-fix {
-            bindings = <&kp PG_DN>;
-            key-positions = <24 37 31>;
-        };
     };
 
     behaviors {
