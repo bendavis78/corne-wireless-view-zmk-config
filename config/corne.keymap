@@ -14,7 +14,7 @@
 
         meta-combo {
             bindings = <&kp LEFT_META>;
-            key-positions = <2 1>;
+            key-positions = <24 37>;
             timeout-ms = <9999>;
         };
     };
