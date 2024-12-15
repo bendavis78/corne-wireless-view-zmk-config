@@ -26,13 +26,6 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&caps_word>;
         };
-
-        shift_ctrl: shift_ctrl {
-            compatible = "zmk,behavior-tap-dance";
-            label = "SHIFT_CTRL";
-            #binding-cells = <0>;
-            bindings = <&kp RIGHT_SHIFT>, <&kp LCTRL>;
-        };
     };
 
     keymap {
