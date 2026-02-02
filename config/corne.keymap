@@ -18,9 +18,9 @@
             timeout-ms = <9999>;
         };
 
-        SUPER_V_SLCK {
+        scroll-lock {
             bindings = <&kp SCROLLLOCK>;
-            key-positions = <24 37 28>;
+            key-positions = <37 0>;
         };
     };
 
