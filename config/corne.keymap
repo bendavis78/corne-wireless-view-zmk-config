@@ -17,6 +17,11 @@
             key-positions = <24 37>;
             timeout-ms = <9999>;
         };
+
+        SUPER_V_SLCK {
+            bindings = <&kp SCROLLLOCK>;
+            key-positions = <24 37 28>;
+        };
     };
 
     behaviors {
@@ -92,6 +97,15 @@
             >;
 
             label = "SYS";
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
         };
     };
 
