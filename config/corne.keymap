@@ -77,35 +77,15 @@
             label = "Tri-Layer";
         };
 
-        BT {
-            bindings = <
-&trans  &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &bt BT_CLR
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                    &trans        &trans        &trans          &trans  &trans  &trans
-            >;
-
-            label = "Bluetooth";
-        };
-
         SYS {
             bindings = <
-&trans  &trans  &trans  &trans  &sys_reset  &trans         &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans      &trans         &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans      &bootloader    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans      &trans         &trans  &trans  &trans
+&sys_reset  &trans        &trans        &trans        &trans        &trans          &trans  &kp R   &kp E   &kp I   &trans  &bt BT_CLR
+&trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &kp U   &kp S   &kp B   &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &bootloader     &trans  &trans  &trans  &trans  &trans  &kp SYSREQ
+                                        &trans        &trans        &trans          &trans  &trans  &trans
             >;
 
-            label = "SYS";
-        };
-
-        layer_6 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
+            label = "System";
         };
     };
 
